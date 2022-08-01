@@ -10,8 +10,20 @@ const App = () => {
       if (error) {
         console.log(error)
       }
+
+        const toSeconds = 1000;
+      
+      const totalTime = sound.getDuration() * toSeconds + toSeconds * 1 ;
+      sound.play((success) => {
+        if (!success) return;
+
+        setTimeout(() => {
+          sound.release();
+        }, totalTime)
+      });
     })
-  };
+  }
+
   return(
     <>
     <View>
