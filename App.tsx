@@ -1,7 +1,8 @@
 import * as React from 'react';
 import { useState } from 'react';
-import { Text, View, } from 'react-native';
+import { Text, View, TouchableOpacity, StyleSheet } from 'react-native';
 import Sound from 'react-native-sound';
+import { create } from 'react-test-renderer';
 import { SFX } from './src/utils/constants';
 
 const App = () => {
@@ -27,11 +28,21 @@ const App = () => {
   return(
     <>
     <View>
-      
+      <View>
+        <TouchableOpacity style={tombol.button1} onPress={() => PlaySound(SFX.NADA1)}/>
+      </View>
     </View>
     </>
     
   )
 };
+
+const tombol = StyleSheet.create ({
+  button1: {
+    backgroundColor: 'red',
+    width: 10,
+    height: 20
+  }
+});
 
 export default App;
