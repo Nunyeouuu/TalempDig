@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { useState } from 'react';
-import { Text, View, TouchableOpacity, StyleSheet } from 'react-native';
+import { Text, View, TouchableOpacity, StyleSheet, Image } from 'react-native';
 import Sound from 'react-native-sound';
 import { create } from 'react-test-renderer';
 import { SFX } from './src/utils/constants';
@@ -28,8 +28,23 @@ const App = () => {
   return(
     <>
     <View>
-      <View>
-        <TouchableOpacity style={tombol.button1} onPress={() => PlaySound(SFX.NADA1)}/>
+      <View style={tombol.container}>
+        <TouchableOpacity onPress={() => PlaySound(SFX.NADA1)}>
+          <Image
+            source={require('../talempdig/IMAGES/talempong1.png')}
+            style={tombol.button3} />
+          
+        </TouchableOpacity>
+        <TouchableOpacity onPress={() => PlaySound(SFX.NADA2)}>
+          <Image
+            source={require('../talempdig/IMAGES/talempong1.png')}
+            style={tombol.button3} />
+        </TouchableOpacity>
+        <TouchableOpacity onPress={() => PlaySound(SFX.NADA3)}>
+            <Image
+            source={require('../talempdig/IMAGES/talempong1.png')}
+            style={tombol.button3} />
+        </TouchableOpacity> 
       </View>
     </View>
     </>
@@ -38,11 +53,33 @@ const App = () => {
 };
 
 const tombol = StyleSheet.create ({
+  container: {
+    flex: 1,
+    justifyContent: 'space-evenly',
+    flexDirection: 'row'
+  },
   button1: {
     backgroundColor: 'red',
-    width: 10,
-    height: 20
-  }
+    width: 100,
+    height: 50,
+    
+  },
+  button2: {
+    backgroundColor: 'tomato',
+    width: 100,
+    height: 50,
+    
+  },
+
+  button3: {
+    width: 125,
+    height: 125,
+    marginTop: 30
+  
+  },
+    
+
+  
 });
 
 export default App;
