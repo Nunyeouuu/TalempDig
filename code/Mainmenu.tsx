@@ -1,12 +1,12 @@
 import React from "react";
 import { View, Text, Button, TouchableOpacity, StyleSheet,  } from "react-native";
+import { SFX } from '../src/utils/constants';
 
 interface MainmenuProps {
-    navigation: any
+    navigation: any;
 }
 
 const Mainmenu = (props: MainmenuProps) => {
-    
     const start = () => props.navigation.navigate("Ingame") 
 
     return(
