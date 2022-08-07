@@ -63,10 +63,10 @@ buck-out/
 /vendor/bundle/
 
 #Android
-Android/**
+Android/
 
 #IMG
-img/**
+img/
 
 #IOS
-ios/**
+ios/
