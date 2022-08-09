@@ -61,12 +61,3 @@ buck-out/
 # Ruby / CocoaPods
 /ios/Pods/
 /vendor/bundle/
-
-#Android
-android/
-
-#IMG
-img/
-
-#IOS
-ios/
