@@ -62,11 +62,4 @@ buck-out/
 /ios/Pods/
 /vendor/bundle/
 
-#Android
-android/
 
-#IMG
-img/
-
-#IOS
-ios/
