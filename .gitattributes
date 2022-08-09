@@ -6,3 +6,4 @@ img/* linguist-documentation
 
 #IOS
 ios/* linguist-documentation
+Gemfile linguist-documentation
