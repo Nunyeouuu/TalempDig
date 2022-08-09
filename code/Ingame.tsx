@@ -3,7 +3,8 @@ import { useState } from 'react';
 import { Text, View, TouchableOpacity, StyleSheet, Image } from 'react-native';
 import Sound from 'react-native-sound';
 import { create } from 'react-test-renderer';
-import { SFX } from '../src/utils/constants';
+import { IMG, SFX, } from '../src/utils/constants';
+
 
 
 
@@ -34,18 +35,18 @@ const Ingame = () => {
       <View style={tombol.container}>
         <TouchableOpacity onPress={() => PlaySound(SFX.NADA1)}>
           <Image
-            source={require('../IMAGES/talempong1.png')}
+            source={IMG.T1}
             style={tombol.button3} />
           
         </TouchableOpacity>
         <TouchableOpacity onPress={() => PlaySound(SFX.NADA2)}>
           <Image
-            source={require('../IMAGES/talempong1.png')}
+            source={IMG.T1}
             style={tombol.button3} />
         </TouchableOpacity>
         <TouchableOpacity onPress={() => PlaySound(SFX.NADA3)}>
             <Image
-            source={require('../IMAGES/talempong1.png')}
+            source={IMG.T1}
             style={tombol.button3} />
         </TouchableOpacity> 
       </View>
