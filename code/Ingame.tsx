@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { useState } from 'react';
-import { Text, View, TouchableOpacity, StyleSheet, Image } from 'react-native';
+import { Text, View, StyleSheet, Image } from 'react-native';
+import { TouchableOpacity } from "react-native-gesture-handler";
 import Sound from 'react-native-sound';
 import { create } from 'react-test-renderer';
 import { IMG, SFX, } from '../src/utils/constants';

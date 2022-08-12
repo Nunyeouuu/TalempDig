@@ -12,5 +12,5 @@ export const SFX: tSfx = {
 export let volume = 1
 
 export const IMG =  {
-    T1: require('../../img/talempong1.png'),
+    T1: require('../../img/talempong1.webp'),
 };

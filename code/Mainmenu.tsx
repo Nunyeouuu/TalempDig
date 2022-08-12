@@ -1,5 +1,6 @@
 import React from "react";
-import { View, Text, Button, TouchableOpacity, StyleSheet,  } from "react-native";
+import { View, Text, Button, StyleSheet,  } from "react-native";
+import { TouchableOpacity } from "react-native-gesture-handler";
 import { SFX } from '../src/utils/constants';
 
 interface MainmenuProps {
